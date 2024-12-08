@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidKeys - Home</title>
+    <link rel="stylesheet" href="Home-style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Welcome to <span>RapidKeys</span></h1>
+            <p>Your ultimate destination to improve typing speed, accuracy, and efficiency. Challenge yourself, track your progress, and have fun while mastering your keyboard skills!</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <div class="dark-box">
+                <h2 class="typed-text"></h2>
+                <p>Explore our tailored challenges to suit your typing goals. Whether you're a beginner or a pro, RapidKeys has something for everyone.</p>
+                <div class="buttons">
+                    <a href="./Typing/Typing.html" class="btn btn-typing">Typing Test</a>
+                    <a href="./Game/Game.html" class="btn btn-game">Typing Speed Game</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="dark-box">
+                <h2>Why Choose RapidKeys?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Track Your Progress</h3>
+                        <p>Measure your typing speed and accuracy in real-time to see how you improve over time.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Interactive Challenges</h3>
+                        <p>Engage in fun and exciting typing challenges designed to keep you motivated.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>User-Friendly Interface</h3>
+                        <p>Enjoy a clean, intuitive design that makes improving your typing skills enjoyable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 RapidKeys. All rights reserved. | Designed for Mini Project.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const options = {
+                strings: [
+                    "Start Your Typing Journey",
+                    "Improve Your Typing Skills",
+                    "Challenge Yourself Today",
+                    "Master the Art of Typing!"
+                ],
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 1000,
+                loop: true
+            };
+
+            const typed = new Typed(".typed-text", options);
+        });
+    </script>
+</body>
+
+</html>

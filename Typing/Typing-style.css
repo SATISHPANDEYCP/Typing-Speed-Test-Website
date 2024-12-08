@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.mainDiv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #000000, #1e0101);
+}
+
+.mainDiv h1 {
+  text-align: center;
+  color: wheat;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(142, 109, 109, 0.3);
+}
+
+/* Centering Content */
+.centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 3px #017071;
+  color: wheat;
+}
+
+/* Subheading Styling */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #017071;
+  font-size: 1.5rem;
+}
+
+/* Textarea Styling */
+textarea {
+  height: 300px;
+  background: wheat;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 5px solid #1e2b37;
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+
+textarea:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Button Styling (Start Button) */
+.mainBtn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #410101;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 30px;
+  color: wheat;
+  border: 2px solid #017071;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.mainBtn:hover {
+  background: linear-gradient(to bottom, #1f0000, #502e2e);
+  border: 2px solid #014142;
+}
+
+/* Go to Game Button Styling */
+.gameBtn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #410101;
+  color: wheat;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid #017071;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.gameBtn:hover {
+  background: linear-gradient(to bottom, #1f0000, #502e2e);
+  border: 2px solid #014142;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .centerDiv {
+    width: 90%;
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+
+  .mainBtn,
+  .gameBtn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Hide typing cursor */
+.typed-cursor {
+  display: none;
+}

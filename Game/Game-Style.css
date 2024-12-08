@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, #000000, #1e0101);
+    font-family: Arial, sans-serif;
+    color: wheat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+#head {
+    width: 40rem;
+    height: 3rem;
+    text-align: center;
+    color: wheat;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(142, 109, 109, 0.3);
+}
+
+input{
+    background-color: wheat;
+}
+
+
+/* Container and Paragraph Styling */
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#para {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+#number {
+    font-size: 1.5rem;
+    color: #017071;
+}
+
+/* Current Word Styling */
+#currentword {
+    font-size: 2.5rem;
+    color: #017071;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Input Field Styling */
+#label {
+    width: 80%;
+    max-width: 500px;
+    height: 40px;
+    font-size: 1rem;
+    border: 2px solid #017071;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+}
+
+/* Timer and Score Section */
+#timer h4,
+#sc {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#time,
+#score {
+    color: #017071;
+    font-weight: bold;
+}
+
+/* Instructions Section */
+.instruction {
+    margin: 20px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    padding: 15px;
+    background: #2d3436;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#ins {
+    color: #017071;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#p {
+    color: wheat;
+    font-size: 1rem;
+}
+
+/* Message Styling */
+#message {
+    color: #017071;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* Go to Home Button */
+#homeButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 155px;
+    border: 2px solid #017071;
+    background-color: #410101;
+    color: wheat !important;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#homeButton:hover {
+    background: linear-gradient(to bottom, #1f0000, #502e2e);
+    color: wheat;
+    border: 2px solid #014142;
+}
+
+
+
+/* Restart Button Styling */
+#restartButton {
+    display: none;
+    margin: 20px auto;
+    border: 2px solid #017071 !important;
+    background-color: #410101 !important;
+    color: wheat !important;
+    /* border: none; */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#restartButton:hover {
+    background: linear-gradient(to bottom, #1f0000, #502e2e);
+    border: 2px solid #014142;
+
+}
+
+
+
+/* Responsive Design */
+/* For tablets (width 600px to 1024px) */
+@media (max-width: 1024px) {
+    #head {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    #label {
+        width: 90%;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    #currentword {
+        font-size: 2rem;
+    }
+
+    #para {
+        font-size: 1rem;
+    }
+
+    #timer h4,
+    #sc {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile devices (width 320px to 600px) */
+@media (max-width: 600px) {
+    #head {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    #label {
+        width: 90%;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    #currentword {
+        font-size: 1.8rem;
+    }
+
+    #para {
+        font-size: 0.9rem;
+    }
+
+    #timer h4,
+    #sc {
+        font-size: 0.9rem;
+    }
+
+    .instruction {
+        width: 90%;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* For very small devices (width < 320px) */
+@media (max-width: 320px) {
+    #head {
+        font-size: 1.2rem;
+    }
+
+    #currentword {
+        font-size: 1.5rem;
+    }
+
+    #label {
+        width: 100%;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .instruction {
+        padding: 8px;
+        font-size: 0.7rem;
+    }
+}
